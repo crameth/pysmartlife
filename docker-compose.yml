@@ -1,0 +1,8 @@
+services:
+  pylife:
+    container_name: pylife
+    build:
+      context: .
+    env_file:
+      - .env
+    restart: unless-stopped
